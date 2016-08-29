@@ -8,3 +8,10 @@ node_modules
 
 # Vim
 *.swp
+
+#typings
+typings
+
+#lib
+lib
+

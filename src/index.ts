@@ -6,5 +6,5 @@ const app = new Koa();
 app.use(bodyParser());
 app.use(router.routes());
 app.listen(30001, ()=> {
-    console.log('listen on 30001');
+    console.log('>>| Listen on 30001');
 });
