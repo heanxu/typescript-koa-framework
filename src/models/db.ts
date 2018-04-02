@@ -1,7 +1,12 @@
-import * as mongoose from 'mongoose';
-import {mongo_str} from '../config';
+import * as mongoose from 'mongoose'
+import { red } from 'chalk'
+import { mongoStr } from '../config';
 
-export const db = mongoose.createConnection(mongo_str[process.env.ENV || 'test'], (err)=> {
-    if (err) return console.log(err);
-    console.log('>>| Connect to db ready...');
-})
+(async () => {
+    try {
+        await mongoose.connect(mongoStr['test'])
+        console.log('>>| Connect to db ready...')
+    } catch (err) {
+        console.error(red('Error: Mongodb connect error!'))
+    }
+})()

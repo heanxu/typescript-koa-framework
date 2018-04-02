@@ -24,7 +24,7 @@
 ```
 
 ```
-$ npm i
+$ yarn
 
 ```
 
@@ -40,7 +40,7 @@ $ tsc -w
 修改数据库连接
 
 ```
-$ npm start
+$ yarn dev
 
 ```
 

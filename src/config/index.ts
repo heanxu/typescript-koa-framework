@@ -1,3 +1,3 @@
-export const mongo_str = {
-    test: 'localhost:27017'
+export const mongoStr = {
+  test: 'mongodb://testUser:testPwd@localhost:27017/test'
 }
