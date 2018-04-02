@@ -47,4 +47,4 @@ $ yarn dev
 启动在 30001 端口
 
 
-GET `localhost:30001/test`
+GET `localhost:30001/`
