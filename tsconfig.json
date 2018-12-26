@@ -5,7 +5,9 @@
         "noImplicitAny": false,
         "sourceMap": false,
         "rootDir": "src",
-        "outDir": "lib"
+        "outDir": "lib",
+        "baseUrl": "types",
+        "typeRoots": ["types"]
     },
     "exclude": [
         "node_modules"

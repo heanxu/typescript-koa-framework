@@ -9,14 +9,15 @@
   "author": "heanxu@qq.com",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.3.2",
-    "koa": "^2.5.0",
-    "koa-bodyparser": "^4.2.0",
+    "chalk": "^2.4.1",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
-    "moment": "^2.22.0",
-    "mongoose": "^5.0.12"
+    "moment": "^2.23.0",
+    "mongoose": "^5.4.0"
   },
   "devDependencies": {
+    "@types/node": "^10.12.18",
     "supervisor": "^0.12.0"
   }
 }

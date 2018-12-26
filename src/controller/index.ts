@@ -1,5 +1,4 @@
 import { User } from '../models/user'
-import * as async from 'async'
 
 interface UserModel {
     name: string
@@ -7,7 +6,7 @@ interface UserModel {
     gender: string
 }
 
-export const createUser = async (ctx) => {
+export const createUser = async (ctx: any) => {
     let { name, age, gender } = ctx.request.body
 
     let user: UserModel = { name, age, gender }

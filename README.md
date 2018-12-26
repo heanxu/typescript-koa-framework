@@ -1,5 +1,6 @@
 # typescript-koa-framework
-用 koa v2.0 框架和 TypeScript 写的服务器端架构。
+
+koa v2.0 框架和 TypeScript 写的服务器端架构
 
 结构如下：
 
@@ -10,7 +11,7 @@
 ├── src
 │   ├── config
 │   │   └── index.ts
-│   ├── handler
+│   ├── controller
 │   │   └── index.ts
 │   ├── index.ts
 │   ├── models
@@ -20,16 +21,10 @@
 │   └── routes
 │       └── index.ts
 ├── tsconfig.json
-└── typings.json
 ```
 
 ```
 $ yarn
-
-```
-
-```
-$ typings i
 
 ```
 

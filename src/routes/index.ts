@@ -1,10 +1,10 @@
 import * as Router from 'koa-router'
-import * as handler from '../handler'
+import { createUser } from '../controller'
 
 const router = new Router()
 
-router.post('/users', handler.createUser)
-router.get('/', (ctx) => {
+router.post('/users', createUser)
+router.get('/', (ctx: any) => {
     ctx.body = 'Hello world.'
 })
 export { router }

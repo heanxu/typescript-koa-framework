@@ -1,12 +1,12 @@
 import * as mongoose from 'mongoose'
-import { red } from 'chalk'
-import { mongoStr } from '../config';
+import chalk from 'chalk'
+import { mongoStr } from '../config'
 
-(async () => {
+;(async () => {
     try {
-        await mongoose.connect(mongoStr['test'])
+        await mongoose.connect(mongoStr['test'], { useNewUrlParser: true })
         console.log('>>| Connect to db ready...')
     } catch (err) {
-        console.error(red('Error: Mongodb connect error!'))
+        console.error(chalk.red('Error: Mongodb connect error!'))
     }
 })()
